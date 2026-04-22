@@ -1,0 +1,177 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyOLGKVIC2aU3z63Rv2F5YhE",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/hariharana114-design/IRONMAN/blob/main/pandas_py.pd\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "import pandas as pd"
+      ],
+      "metadata": {
+        "id": "cAlvXchSvl3v"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "import pandas as pd"
+      ],
+      "metadata": {
+        "id": "lzf9fZ4Wvpp7"
+      },
+      "execution_count": 6,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "age=[26,23,24,25,24]"
+      ],
+      "metadata": {
+        "id": "XUWbTZA4vtn-"
+      },
+      "execution_count": 7,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "series = pd.Series(age)"
+      ],
+      "metadata": {
+        "id": "0Cvbb9I8wcA3"
+      },
+      "execution_count": 10,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(series)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "xP5HTayuw4uM",
+        "outputId": "4acaa49d-8593-41fa-c478-6afd2d4eca31"
+      },
+      "execution_count": 11,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "0    26\n",
+            "1    23\n",
+            "2    24\n",
+            "3    25\n",
+            "4    24\n",
+            "dtype: int64\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "age={\n",
+        "    \"hari\": 25,\n",
+        "    \"haran\":32,\n",
+        "    \"ari\":43\n",
+        "}"
+      ],
+      "metadata": {
+        "id": "MHzrYgJXyJJ_"
+      },
+      "execution_count": 12,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "series = pd.Series(age)"
+      ],
+      "metadata": {
+        "id": "EzcT4I39ykAj"
+      },
+      "execution_count": 13,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(series)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "TyNGsqKtyq1e",
+        "outputId": "da807b59-75c7-41a8-d53f-ffc10cfa51b0"
+      },
+      "execution_count": 14,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "hari     25\n",
+            "haran    32\n",
+            "ari      43\n",
+            "dtype: int64\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(series[series>30])"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "jF_tdUyyy3Ok",
+        "outputId": "c9b49689-e9a3-4b99-d117-abdf41bfed73"
+      },
+      "execution_count": 15,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "haran    32\n",
+            "ari      43\n",
+            "dtype: int64\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
